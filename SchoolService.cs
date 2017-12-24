@@ -23,7 +23,7 @@ namespace Xmu.Crms.Services.HighGrade
 
             if (school == null)
             {
-                throw new SchoolNotFoundException();
+                throw new ArgumentOutOfRangeException();
             }
             return school;
         }
