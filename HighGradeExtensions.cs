@@ -1,4 +1,4 @@
-﻿using Xmu.Crms.Services.Insomnia;
+﻿using Xmu.Crms.Services.HighGrade;
 using Xmu.Crms.Shared.Service;
 
 namespace Microsoft.Extensions.DependencyInjection
