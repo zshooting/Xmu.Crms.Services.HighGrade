@@ -91,7 +91,7 @@ namespace Xmu.Crms.Services.HighGrade
             return u;
         }
 
-        public bool DeleteTeacherAccount(long userId)
+        public void DeleteTeacherAccount(long userId)
         {
             var teacher = _db.UserInfo.SingleOrDefault(u => u.Id == userId);
 
@@ -100,10 +100,9 @@ namespace Xmu.Crms.Services.HighGrade
 
             teacher.Phone = null;
             _db.SaveChanges();
-            return true;
         }
 
-        public bool DeleteStudentAccount(long userId)
+        public void DeleteStudentAccount(long userId)
         {
             var student = _db.UserInfo.SingleOrDefault(u => u.Id == userId);
 
@@ -112,7 +111,6 @@ namespace Xmu.Crms.Services.HighGrade
 
             student.Phone = null;
             _db.SaveChanges();
-            return true;
         }
 
     }
